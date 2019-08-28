@@ -1,0 +1,3 @@
+# Mson
+一个针对Android的Json优化库，使用预编译方式
+项目中只包含一个Bean的类和对应的测试方法；起原理和BindView一样
