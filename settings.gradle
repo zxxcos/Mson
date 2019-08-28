@@ -1,0 +1,1 @@
+include ':MsonProcessor', ':MsonApplication', ':android-support'

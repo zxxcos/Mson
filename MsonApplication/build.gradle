@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "android.medou.com.mapplication"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            //不显示 Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //移除无用的 Resource
+            shrinkResources true
+            //资源文件按4字节对齐
+            zipAlignEnabled true
+            //关闭调试
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+//            buildConfigField("String", "DOMAIN_NAME", '"https://test.1hhd.com/"')
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation "com.android.support:recyclerview-v7:$supportVersion"
+    // 多dex配置
+//    implementation "com.android.support:multidex:1.0.2"
+    implementation project(path: ':android-support')
+    implementation project(path: ':MsonProcessor')
+    annotationProcessor project(path: ':MsonProcessor')
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ihhdkt.iml" filepath="$PROJECT_DIR$/Ihhdkt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MsonApplication/MsonApplication.iml" filepath="$PROJECT_DIR$/MsonApplication/MsonApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MsonProcessor/MsonProcessor.iml" filepath="$PROJECT_DIR$/MsonProcessor/MsonProcessor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-support/android-support.iml" filepath="$PROJECT_DIR$/android-support/android-support.iml" />
+    </modules>
+  </component>
+</project>
